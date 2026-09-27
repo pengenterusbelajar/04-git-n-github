@@ -1,2 +1,2 @@
 disini saya akan belajar tentang web development.
-di dero ini kan menjadi tempat untuk pembelajaran saya
+di repo ini kan menjadi tempat untuk pembelajaran saya
