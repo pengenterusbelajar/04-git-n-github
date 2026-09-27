@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coba audio video</title>
+  </head>
+  <body>
+    <h1>disini akan mencoba rich media tags</h1>
+    <h3>penggunaan media video</h3>
+    <!--video tag digunakan untuk menampilkan video di halaman web, dengan atribut controls untuk menampilkan kontrol video, dan poster untuk menampilkan gambar sebelum video diputar. poster adalah gambar yang ditampilkan sebelum video dimulai  -->
+
+    <video
+      controls
+      poster="mediasound/desk-setup-thumb.jpg"
+      width="640"
+      height="360"
+    >
+      <source type="video/mp4" src="mediasound/keyboard-asmr.mp4" />
+      <source type="video/webm" src="mediasound/keyboard-asmr.webm" />
+      BROWSER ANDA TIDAK MENDUKUNG VIDEO TAG / VIDEO PLAYER TIDAK TERSEDIA
+    </video>
+
+    <hr />
+    <h3>penggunaan media audio</h3>
+    <!--audio tag digunakan untuk menampilkan audio di halaman web, dengan atribut controls untuk menampilkan kontrol audio. audio tag tidak memiliki atribut poster, karena audio tidak memiliki gambar yang ditampilkan sebelum audio diputar. audio tag hanya memiliki atribut src untuk menentukan sumber audio yang akan diputar.-->
+    <audio controls>
+      <source type="audio/mpeg" src="mediasound/moderation.mp3" />
+    </audio>
+  </body>
+</html>
