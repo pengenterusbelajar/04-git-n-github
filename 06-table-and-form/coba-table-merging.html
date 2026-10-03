@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>belajar tabel</title>
+  </head>
+  <body>
+    <h3>disini akan belajar tentang table merging</h3>
+    <h4>
+      pertama kita akan membuat table biasa dengan border lalu akan me-merge
+      table tersebut
+    </h4>
+    <p>tabel 1 (normal)</p>
+    <!-- tabel cell spacing dan cell padding seharusnya adalah tugas dari css, sebisa mungkin hindari memudifikasi styling-->
+    <table border="1" cellspacing="0" cellpadding="5">
+      <tr>
+        <td>b1, k1</td>
+        <td>b1, k2</td>
+        <td>b1, k3</td>
+      </tr>
+      <tr>
+        <td>b2, k1</td>
+        <td>b2, k2</td>
+        <td>b2, k3</td>
+      </tr>
+      <tr>
+        <td>b3, k1</td>
+        <td>b3, k2</td>
+        <td>b3, k3</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <h4>sekarang kita akan coba merge cell b1k2 dengan cell b1k3</h4>
+    <p>tabel 2: merge 2 kolom</p>
+
+    <table border="1" cellspacing="0" cellpadding="5">
+      <tr>
+        <td>b1, k1</td>
+        <!-- untuk merging horisontal menggunakan attribut colspan-->
+        <td colspan="2">gabungan horisontal 2</td>
+      </tr>
+      <tr>
+        <td>b2, k1</td>
+        <td>b2, k2</td>
+        <td>b2, k3</td>
+      </tr>
+      <tr>
+        <td>b3, k1</td>
+        <td>b3, k2</td>
+        <td>b3, k3</td>
+      </tr>
+    </table>
+
+    <br />
+    <br />
+    <h4>sekarang kita akan coba merge cell b2k2 dengan cell b3k2</h4>
+    <p>tabel 3 : merge vertikal</p>
+    <table border="1" cellspacing="0" cellpadding="5">
+      <tr>
+        <td>b1, k1</td>
+        <!-- untuk merging horisontal menggunakan attribut colspan-->
+        <td colspan="2">gabungan horisontal 2</td>
+      </tr>
+      <tr>
+        <td>b2, k1</td>
+        <!-- <td>b2, k2</td> -->
+        <!-- mergin vertik al menggunakan attribut rowspan -->
+        <td>b2, k2</td>
+        <td rowspan="2">merge vertikal</td>
+      </tr>
+      <tr>
+        <td>b3, k1</td>
+        <td>b3, k2</td>
+      </tr>
+    </table>
+  </body>
+  <!-- cara merge vertikal lebih ribet dari merge horisontal -->
+  <!-- inti logical thinking nya adalah html deklaratif dari atas ke bawah, jadi untuk mendeklarasikan cell yang inngin kita merge antara atas dan bawah nya, kita harus deklarasi di sell atas, kemudian di sell bawahnya kita tidak perlu mendeklarasikan td nya.-->
+  <!-- sebagai contoh di tabel 3, kita deklarasi rowspan di td b2k3, kemudian di b3k3 kita tidak perlu membuat td nya -->
+</html>
